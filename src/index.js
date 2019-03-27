@@ -1,5 +1,5 @@
-import useFormValidation from "./lib/useFormValidation";
+import useFormValidation from "./lib";
 
-export default {useFormValidation}
+export default useFormValidation
 
 
