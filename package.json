@@ -1,12 +1,13 @@
 {
   "name": "react-input-validation-hook",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "private": false,
   "dependencies": {
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-scripts": "2.1.8"
   },
+  "repository": "https://github.com/SeanningTatum/react-input-validation-hook",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
