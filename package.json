@@ -16,10 +16,12 @@
   "repository": "https://github.com/SeanningTatum/react-input-validation-hook",
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
+    "build-package": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage" : "http://SeanningTatum.github.io/react-input-validation-hook-example",
   "eslintConfig": {
     "extends": "react-app"
   },
