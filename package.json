@@ -7,10 +7,16 @@
     "react-dom": "^16.8.5",
     "react-scripts": "2.1.8"
   },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "repository": "https://github.com/SeanningTatum/react-input-validation-hook",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -25,6 +31,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "flow-bin": "^0.95.1"
   },
   "keywords": [
