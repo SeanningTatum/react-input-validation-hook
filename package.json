@@ -1,6 +1,6 @@
 {
   "name": "react-input-validation-hook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "dependencies": {
     "gh-pages": "^2.0.1",
