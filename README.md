@@ -46,7 +46,7 @@ const [errors, value, isValid] = useFormValidation(initialValue, [options])
 |               | DataType      | Description  |
 | ------------- |:-------------:| :-----------------------------------|
 | errors        |`Array<string>`| Given the options, returns an array of errors based on the options given |
-| myValue       | string        | The current value of the string     |
+| myValue       | `{value: string, onChange: (event) => void, onBlur: () => void}`       | The current value of the string     |
 | isValid       | boolean       | Given the options, returns true if value is inline with the *options* given |
 
 ## Options
