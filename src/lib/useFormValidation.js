@@ -4,10 +4,13 @@ import {useState} from "react";
 
 import {type Options} from './interfaces'
 
-export default function useFormValidation(initialValue: string = '', options: Options) {
+type returnValue = [Array<string>, {value: string, onBlur: () => void, onChange: (event: any) => void}, boolean];
+
+export default function useFormValidation(initialValue: string = '', options: Options): returnValue {
   const [value, setValue] = useState(initialValue);
   const [errors, setErrors] = useState([]);
   const [dirty, setDirty] = useState(false);
+  const [isValid, setIsValid] = useState(false); 
 
   function validateEmail(email: string) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -36,6 +39,7 @@ export default function useFormValidation(initialValue: string = '', options: Op
     }
 
     setErrors(newErrors);
+    setIsValid(newErrors.length === 0 ? true : false);
   }
 
   function onChangeHandler(event: any) {
@@ -58,6 +62,7 @@ export default function useFormValidation(initialValue: string = '', options: Op
       value,
       onBlur: onBlurHandler,
       onChange: onChangeHandler
-    }
+    },
+    isValid
   ]
 }
