@@ -1,6 +1,6 @@
 {
   "name": "react-input-validation-hook",
-  "version": "0.9.6",
+  "version": "1.0.0",
   "private": false,
   "dependencies": {
     "react": "^16.8.5",
