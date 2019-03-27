@@ -22,7 +22,7 @@ export default function useFormValidation(initialValue: string = '', options: Op
     if (options.minLength && value.length < options.minLength) {
       newErrors.push(`You need a minimum of ${options.minLength} characters`);
     }
-
+    
     if (options.maxLength && value.length > options.maxLength) {
       newErrors.push(
         `You have exceeded the max characters of ${options.maxLength}`
