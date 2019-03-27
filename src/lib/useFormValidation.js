@@ -2,9 +2,8 @@
 
 import {useState} from "react";
 
-import {type Options} from './interfaces'
+import type {Options, returnValue} from './interfaces'
 
-type returnValue = [Array<string>, {value: string, onBlur: () => void, onChange: (event: any) => void}, boolean];
 
 export default function useFormValidation(initialValue: string = '', options: Options): returnValue {
   const [value, setValue] = useState(initialValue);

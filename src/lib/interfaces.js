@@ -6,3 +6,5 @@ export interface Options {
     minLength?: number;
     maxLength?: number;
 }
+
+export type returnValue = [Array<string>, {value: string, onBlur: () => void, onChange: (event: any) => void}, boolean];
