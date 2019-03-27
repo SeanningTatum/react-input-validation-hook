@@ -1,7 +1,7 @@
 {
-  "name": "react-input-validation",
+  "name": "react-input-validation-hook",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
@@ -16,6 +16,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "license": "MIT",
   "browserslist": [
     ">0.2%",
     "not dead",
@@ -24,5 +25,14 @@
   ],
   "devDependencies": {
     "flow-bin": "^0.95.1"
-  }
+  },
+  "keywords": [
+    "form-validation",
+    "react-form-validation",
+    "hooks",
+    "react hook",
+    "react form validation",
+    "react hooks form validation",
+    "react form validation hook"
+  ]
 }
